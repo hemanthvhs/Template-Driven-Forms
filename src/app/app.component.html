@@ -5,14 +5,14 @@
       <!-- Email -->
       <mat-form-field appearance="outline">
         <mat-label>Email</mat-label>
-        <input matInput autocomplete="off" type="email" [ngModel]="valObj.email" name="email" minlength="3" #email="ngModel" required email />
+        <input matInput autocomplete="off" type="email" ngModel name="email" minlength="3" #email="ngModel" required email />
         <mat-error *ngIf="email.errors?.required">This field is required</mat-error>
         <mat-error *ngIf="email.errors?.email">Please enter valid email</mat-error>
       </mat-form-field>
       <!-- Password -->
       <mat-form-field appearance="outline">
         <mat-label>Password</mat-label>
-        <input matInput type="password" [ngModel]="valObj.password" name="password"  #password="ngModel" required/>
+        <input matInput type="password" ngModel name="password"  #password="ngModel" required/>
         <mat-error *ngIf="password.errors?.required">This field is required</mat-error>
       </mat-form-field>
       <!-- Login Button -->
