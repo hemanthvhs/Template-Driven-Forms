@@ -9,9 +9,10 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 
 import { AppComponent } from './app.component';
+import { PasswordStrengthDirective } from './directives/password-strength.directive';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, PasswordStrengthDirective],
   imports: [
     BrowserModule,
     FormsModule,
